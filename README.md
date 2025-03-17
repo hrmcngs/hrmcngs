@@ -1,5 +1,5 @@
 ### hello world 👋 
-まだ学生なんでね命名が終わってるとかコードが汚いとかは見逃してほしいですね  
+僕、学生なんでね命名が終わってるとかコードが汚いとかは見逃してほしいですね  
 まだ趣味の域を超えてないので許してよ  
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=hrmcngs&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)  
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hrmcngs&layout=compact&theme=dark&hide=c,assembly,qmake,batchfile,scss)](https://github.com/anuraghazra/github-readme-stats)  
