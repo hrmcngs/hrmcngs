@@ -1,4 +1,4 @@
-### hello world 👋 
+### [![Typing SVG](https://readme-typing-svg.demolab.com?font=Jacquard+12&pause=1000&color=572C33&background=FF000000&random=true&width=435&lines=hello+world)](https://git.io/typing-svg)
 僕、学生なんでね命名が終わってるとかコードが汚いとかは見逃してほしいですね  
 まだ趣味の域を超えてないので許してほしいのだ  
 <img src="https://github-readme-stats-git-master-airopis-projects.vercel.app/api?username=hrmcngs&count_private=true&show_icons=true&locale=en&theme=dark&count_private=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR" />  
