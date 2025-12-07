@@ -8,6 +8,6 @@
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hrmcngs&layout=compact&theme=dark&hide=c,assembly,&count_private=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR,qmake" />  
 
-![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=Drowse-Lab\&repo=The-four-primitives-and-Weapons\&title_color=2aa889\&icon_color=0f0f0f0\&text_color=99d1ce\&bg_color=000000)       
+![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=Drowse-Lab\&repo=The-four-primitives-and-Weapons\&title_color=023b54\&icon_color=0f0f0f0\&text_color=18d8db\&bg_color=292929)       
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/hrmcngs)
