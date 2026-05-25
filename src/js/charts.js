@@ -232,15 +232,11 @@
     return svg(W, H, rings + axes + scaleLabels + labels + data);
   }
 
-  // ── 季節・天気で bars3d の色を決める（色だけ・粒子アニメは無し） ──
-  // season: spring|summer|autumn|winter / weather: rain|snow|clear
-  function seasonWeatherColor(season, weather) {
+  // ── 天気で bars3d の色を上書きする（雨/雪のときだけ）──
+  // 季節の上書きはしない：呼び出し側の月別アクセント（新緑・紅葉・冬空…）に任せる。
+  function weatherColor(weather) {
     if (weather === 'rain') return '#5a9bd4';   // 雨 — 青
     if (weather === 'snow') return '#9fc6e8';   // 雪 — 氷青
-    if (season === 'spring') return '#ec9bb5';  // 春 — 桜ピンク
-    if (season === 'summer') return '#3fb950';  // 夏 — 緑
-    if (season === 'autumn') return '#e0813a';  // 秋 — 紅葉オレンジ
-    if (season === 'winter') return '#6f9fd8';  // 冬 — 冬空の青
     return null;
   }
 
@@ -248,8 +244,9 @@
   // days: [{ date, count, level }] / 棒の高さ＝コミット数・色の濃淡＝level
   function bars3d(days, o) {
     o = o || {};
-    // 季節・天気が指定されていればその色を、なければ accent を使う
-    const accent = seasonWeatherColor(o.season, o.weather) || o.accent || '#39d353';
+    // 雨/雪なら天気色で上書き、それ以外は呼び出し側の月別アクセントを使う
+    const accent = weatherColor(o.weather) || o.accent || '#39d353';
+    const isRain = o.weather === 'rain';
     if (!days || !days.length) return svg(240, 90, '');
 
     // 先頭を日曜に合わせてパディングし、7日ごとの週（列）に並べる
@@ -270,19 +267,31 @@
     const barH = (c) => 3 + (Math.log10((c || 0) + 1) / (Math.log10(maxCount + 1) || 1)) * MAXBAR;
 
     // level（0-4）で色の濃淡を、面ごとに明るさを変えて立体感を出す
-    const accRGB = hexRGB(accent);
-    const DARK = [30, 30, 38];
-    const LV_F = [0.12, 0.45, 0.66, 0.85, 1];
+    // 雨の日は脱彩・暗め・面の明暗差を弱めてジメジメした空気感に
+    let accRGB = hexRGB(accent);
+    if (isRain) accRGB = mix(accRGB, [110, 125, 140], 0.22);
+    const DARK = isRain ? [22, 24, 30] : [30, 30, 38];
+    const LV_F = isRain
+      ? [0.10, 0.38, 0.56, 0.72, 0.86]
+      : [0.12, 0.45, 0.66, 0.85, 1];
+    const rightT = isRain ? 0.78 : 0.7;
+    const leftT  = isRain ? 0.58 : 0.48;
     const faces = (lv) => {
       const lit = mix(DARK, accRGB, LV_F[lv] != null ? LV_F[lv] : 1);
       return {
         top: rgbOf(lit),
-        right: rgbOf(mix([0, 0, 0], lit, 0.7)),
-        left: rgbOf(mix([0, 0, 0], lit, 0.48)),
+        right: rgbOf(mix([0, 0, 0], lit, rightT)),
+        left: rgbOf(mix([0, 0, 0], lit, leftT)),
       };
     };
 
-    let body = '';
+    // 雨のときは上に薄い霧のグラデを後で重ねる
+    let body = isRain
+      ? '<defs><linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">'
+        + '<stop offset="0" stop-color="rgb(190,205,220)" stop-opacity="0.20"/>'
+        + '<stop offset="1" stop-color="rgb(190,205,220)" stop-opacity="0"/>'
+        + '</linearGradient></defs>'
+      : '';
     // 奥→手前（depth = c + r 昇順）の順に描画して前後関係を正しく
     const maxDepth = (weeks - 1) + 6;
     for (let depth = 0; depth <= maxDepth; depth++) {
@@ -301,6 +310,7 @@
           + `<title>${cell ? esc(cell.date) + ' ・ ' + cell.count + ' contributions' : ''}</title></polygon>`;
       }
     }
+    if (isRain) body += `<rect x="0" y="0" width="${W}" height="${H}" fill="url(#mist)" pointer-events="none"/>`;
     return svg(W, H, body);
   }
 
