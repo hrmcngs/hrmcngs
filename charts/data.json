@@ -22,7 +22,7 @@
     ],
     [
       "JSON",
-      329821
+      329907
     ],
     [
       "mcfunction",
@@ -1934,11 +1934,16 @@
         "date": "2026-05-28",
         "count": 2,
         "level": 1
+      },
+      {
+        "date": "2026-05-29",
+        "count": 0,
+        "level": 0
       }
     ],
     "total": 2514
   },
   "season": "spring",
   "weather": "clear",
-  "generatedAt": "2026-05-28T14:58:09.447Z"
+  "generatedAt": "2026-05-29T01:50:31.618Z"
 }
