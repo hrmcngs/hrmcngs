@@ -15,3 +15,17 @@
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/hrmcngs)
 
 ![My GitHub Game](game.gif)
+
+---
+
+### 他のリポジトリに同じチャートを入れる
+
+任意のリポジトリの Codespaces ターミナル（または手元の git クローン）で以下を貼り付けるだけ:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/hrmcngs/hrmcngs/main/bootstrap.sh | bash
+```
+
+- `git remote (origin)` から GitHub ユーザー名を自動検出（`GHS_USER=foo` で上書き可）
+- `scripts/gen-charts.js` / `src/js/charts.js` / `.github/workflows/update-charts.yml` を配置
+- その場で 1 回 SVG を生成し、以降は Actions が 12 時間ごとに自動更新
