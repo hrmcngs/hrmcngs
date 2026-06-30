@@ -4,9 +4,9 @@
   "avatar": "https://avatars.githubusercontent.com/u/78349683?v=4",
   "htmlUrl": "https://github.com/hrmcngs",
   "metrics": {
-    "commits": 2052,
+    "commits": 2032,
     "prs": 408,
-    "issues": 22,
+    "issues": 21,
     "reviews": 2,
     "involved": 409,
     "repos": 20
@@ -14,7 +14,7 @@
   "langs": [
     [
       "Java",
-      12825174
+      12897828
     ],
     [
       "JavaScript",
@@ -1919,11 +1919,16 @@
         "date": "2026-06-29",
         "count": 4,
         "level": 1
+      },
+      {
+        "date": "2026-06-30",
+        "count": 1,
+        "level": 1
       }
     ],
-    "total": 2794
+    "total": 2795
   },
   "season": "summer",
   "weather": "clear",
-  "generatedAt": "2026-06-29T15:21:51.651Z"
+  "generatedAt": "2026-06-30T01:54:55.583Z"
 }
