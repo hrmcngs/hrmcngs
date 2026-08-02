@@ -1,3 +1,5 @@
+// powered by https://github.com/hrmcngs/github-stats-charts
+
 /**
  * charts.js — SVG チャート描画ライブラリ（依存なし・自己完結）
  * --------------------------------------------------------------------------

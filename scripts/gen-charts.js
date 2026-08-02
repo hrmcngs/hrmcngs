@@ -1,5 +1,7 @@
 'use strict';
 
+// powered by https://github.com/hrmcngs/github-stats-charts
+
 /**
  * gen-charts.js — GitHub統計チャートを SVG ファイルとして生成する
  * --------------------------------------------------------------------------

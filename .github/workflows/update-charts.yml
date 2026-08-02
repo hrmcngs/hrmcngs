@@ -1,5 +1,7 @@
 name: Update chart SVGs
 
+# powered by https://github.com/hrmcngs/github-stats-charts
+#
 # GitHub統計チャートを SVG として生成し charts/ に出力する。
 # .md にはこの SVG を画像として埋め込む（Markdown は JS が動かないため）。
 # 内容に変化があったときだけコミットする。
