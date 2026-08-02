@@ -4,7 +4,7 @@
   "avatar": "https://avatars.githubusercontent.com/u/78349683?v=4",
   "htmlUrl": "https://github.com/hrmcngs",
   "metrics": {
-    "commits": 1917,
+    "commits": 1914,
     "prs": 410,
     "issues": 25,
     "reviews": 2,
@@ -14,7 +14,7 @@
   "langs": [
     [
       "Java",
-      13440761
+      13473981
     ],
     [
       "JavaScript",
@@ -22,7 +22,7 @@
     ],
     [
       "JSON",
-      338284
+      337853
     ],
     [
       "CSS",
@@ -34,7 +34,7 @@
     ],
     [
       "Markdown",
-      207377
+      208261
     ],
     [
       "Shell",
@@ -94,41 +94,6 @@
   ],
   "contrib": {
     "days": [
-      {
-        "date": "2025-07-27",
-        "count": 5,
-        "level": 1
-      },
-      {
-        "date": "2025-07-28",
-        "count": 2,
-        "level": 1
-      },
-      {
-        "date": "2025-07-29",
-        "count": 3,
-        "level": 1
-      },
-      {
-        "date": "2025-07-30",
-        "count": 6,
-        "level": 1
-      },
-      {
-        "date": "2025-07-31",
-        "count": 2,
-        "level": 1
-      },
-      {
-        "date": "2025-08-01",
-        "count": 3,
-        "level": 1
-      },
-      {
-        "date": "2025-08-02",
-        "count": 17,
-        "level": 2
-      },
       {
         "date": "2025-08-03",
         "count": 1,
@@ -1946,13 +1911,18 @@
       },
       {
         "date": "2026-08-01",
-        "count": 0,
-        "level": 0
+        "count": 2,
+        "level": 1
+      },
+      {
+        "date": "2026-08-02",
+        "count": 1,
+        "level": 1
       }
     ],
-    "total": 2641
+    "total": 2644
   },
   "season": "summer",
   "weather": "clear",
-  "generatedAt": "2026-08-01T12:44:54.276Z"
+  "generatedAt": "2026-08-02T01:18:56.411Z"
 }
