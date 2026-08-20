@@ -4,7 +4,7 @@
   "avatar": "https://avatars.githubusercontent.com/u/78349683?v=4",
   "htmlUrl": "https://github.com/hrmcngs",
   "metrics": {
-    "commits": 2006,
+    "commits": 2021,
     "prs": 410,
     "issues": 25,
     "reviews": 2,
@@ -14,19 +14,19 @@
   "langs": [
     [
       "Java",
-      12793298
+      12807199
     ],
     [
       "JavaScript",
-      1718041
+      1747943
     ],
     [
       "JSON",
-      338263
+      338601
     ],
     [
       "CSS",
-      275349
+      276394
     ],
     [
       "mcfunction",
@@ -38,11 +38,11 @@
     ],
     [
       "Swift",
-      166552
+      192477
     ],
     [
       "Shell",
-      121038
+      121849
     ],
     [
       "Python",
@@ -58,7 +58,7 @@
     ],
     [
       "Batchfile",
-      27932
+      28030
     ],
     [
       "PowerShell",
@@ -73,16 +73,16 @@
       3481
     ],
     [
+      "TypeScript",
+      2740
+    ],
+    [
       "Ruby",
       902
     ],
     [
       "YAML",
       863
-    ],
-    [
-      "TypeScript",
-      579
     ],
     [
       "Makefile",
@@ -1936,13 +1936,13 @@
       },
       {
         "date": "2026-08-20",
-        "count": 0,
-        "level": 0
+        "count": 14,
+        "level": 1
       }
     ],
-    "total": 2728
+    "total": 2742
   },
   "season": "summer",
   "weather": "clear",
-  "generatedAt": "2026-08-20T00:25:36.567Z"
+  "generatedAt": "2026-08-20T12:18:25.712Z"
 }
