@@ -1916,13 +1916,13 @@
       },
       {
         "date": "2026-08-30",
-        "count": 5,
-        "level": 1
+        "count": 42,
+        "level": 3
       }
     ],
-    "total": 2790
+    "total": 2827
   },
   "season": "summer",
   "weather": "clear",
-  "generatedAt": "2026-08-30T01:48:08.995Z"
+  "generatedAt": "2026-08-30T15:30:11.213Z"
 }
