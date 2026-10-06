@@ -1,10 +1,10 @@
 {
-  "name": "Hiromichi Nagase",
+  "name": "長瀬拓通",
   "login": "hrmcngs",
   "avatar": "https://avatars.githubusercontent.com/u/78349683?v=4",
   "htmlUrl": "https://github.com/hrmcngs",
   "metrics": {
-    "commits": 2268,
+    "commits": 2273,
     "prs": 334,
     "issues": 27,
     "reviews": 1,
@@ -18,7 +18,7 @@
     ],
     [
       "JavaScript",
-      2504162
+      2510261
     ],
     [
       "mcfunction",
@@ -26,15 +26,15 @@
     ],
     [
       "JSON",
-      778113
+      778284
     ],
     [
       "Swift",
-      732837
+      736498
     ],
     [
       "CSS",
-      446382
+      447919
     ],
     [
       "Shell",
@@ -1929,13 +1929,18 @@
       },
       {
         "date": "2026-10-05",
+        "count": 19,
+        "level": 2
+      },
+      {
+        "date": "2026-10-06",
         "count": 1,
         "level": 1
       }
     ],
-    "total": 2993
+    "total": 3012
   },
   "season": "autumn",
   "weather": "clear",
-  "generatedAt": "2026-10-05T02:27:58.624Z"
+  "generatedAt": "2026-10-06T03:22:57.863Z"
 }
