@@ -1950,13 +1950,18 @@
       },
       {
         "date": "2026-11-06",
-        "count": 6,
+        "count": 8,
+        "level": 1
+      },
+      {
+        "date": "2026-11-07",
+        "count": 2,
         "level": 1
       }
     ],
-    "total": 4697
+    "total": 4701
   },
   "season": "autumn",
   "weather": "clear",
-  "generatedAt": "2026-11-06T18:32:26.016Z"
+  "generatedAt": "2026-11-07T03:18:25.561Z"
 }
